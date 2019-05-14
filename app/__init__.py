@@ -20,6 +20,9 @@ login.login_view = 'login'
 mail = Mail(app)
 bootstrap = Bootstrap(app)
 
+if __name__ == '__main__':
+  app.run(host='0.0.0.0', port=5000)
+
 from app import routes, models
 from app import routes, models, errors
 
